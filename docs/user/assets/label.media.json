@@ -1,0 +1,25 @@
+{
+  "sequence_kind": "steps",
+  "size": [
+    1600,
+    1000
+  ],
+  "input_frames": 2,
+  "encoded_frames": 2,
+  "duration_ms": 6400,
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "gif": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\label.gif",
+  "poster": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\label.poster.png",
+  "source_video_sha256": null,
+  "sources": [
+    {
+      "path": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\raw\\label-1.png",
+      "sha256": "9c4b00cb35fffe64707b286fe4bbd7cf50e6b25682407fbd1136b70bfc64699e"
+    },
+    {
+      "path": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\raw\\label-2.png",
+      "sha256": "6cb4063db042aa23c72b0b16639e3ab09cdbce6dcd70f2ed1e61b3ac03468ab6"
+    }
+  ],
+  "provenance_note": "Conversion only; the caller must verify these inputs are actual captured evidence."
+}

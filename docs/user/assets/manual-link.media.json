@@ -1,0 +1,29 @@
+{
+  "sequence_kind": "steps",
+  "size": [
+    1600,
+    1000
+  ],
+  "input_frames": 3,
+  "encoded_frames": 3,
+  "duration_ms": 9600,
+  "font": "C:\\Windows\\Fonts\\msyh.ttc",
+  "gif": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\manual-link.gif",
+  "poster": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\manual-link.poster.png",
+  "source_video_sha256": null,
+  "sources": [
+    {
+      "path": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\raw\\manual-link-1.png",
+      "sha256": "e282822b88c31a5128c23394b5c05297996188f839f01819e4f5124699bd2fa1"
+    },
+    {
+      "path": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\raw\\manual-link-2.png",
+      "sha256": "8139b9830f6f0d8c5bc1eca9f44c2669f182df097401f312847ef7b83c10c8b2"
+    },
+    {
+      "path": "D:\\GPTWorkspace\\2026-11-03\\codex-voice-notes-typescript-voice-notes\\outputs\\siyuan-voice-notes-upgrade\\docs\\user\\assets\\raw\\manual-link-3.png",
+      "sha256": "7ab48c0a5536d7ea5de483de79dcbc517da70b9e0ab7102fe685c456755f9630"
+    }
+  ],
+  "provenance_note": "Conversion only; the caller must verify these inputs are actual captured evidence."
+}
