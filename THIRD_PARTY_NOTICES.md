@@ -68,3 +68,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+## Mediabunny 1.66.0
+
+Audio clip reading and writing uses the unmodified Mediabunny library, distributed under the Mozilla Public License 2.0. [Corresponding source](https://github.com/Vanilagy/mediabunny/tree/v1.66.0) · [License](https://www.mozilla.org/MPL/2.0/).
