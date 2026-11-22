@@ -2,7 +2,7 @@
   "name": "siyuan-voice-notes-lite",
   "author": "Voice Notes contributors",
   "url": "https://github.com/jiangeeeeee/siyuan-voice-notes-lite",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "minAppVersion": "3.8.9",
   "backends": [
     "all"
@@ -34,5 +34,6 @@
   ],
   "settingsWindow": true,
   "disabledInPublish": true,
-  "preview": "preview.png"
+  "preview": "preview.png",
+  "icon": "icon.png"
 }
