@@ -2,7 +2,7 @@
   "name": "siyuan-voice-notes-lite",
   "author": "Voice Notes contributors",
   "url": "https://github.com/jiangeeeeee/siyuan-voice-notes-lite",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "minAppVersion": "3.8.9",
   "backends": [
     "all"
