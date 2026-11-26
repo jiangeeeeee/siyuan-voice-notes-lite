@@ -4,7 +4,19 @@
 
 **当前版本 0.9.0** · 思源 3.8.9 及以上 · 桌面端、浏览器及移动端（会议录音见下） · [下载 Lite 安装包（package.zip）](https://github.com/jiangeeeeee/siyuan-voice-notes-lite/releases/download/v0.9.0/package.zip)
 
-## 🌟 本版新增 · 会议录音
+## 🌟 本次更新 · 波形和回听
+
+| 想做什么 | 从哪里开始 |
+| --- | --- |
+| 🌊 先看哪里有人说话 | 打开语音块，等整条波形画好，再决定从哪儿听。长录音也会读到末尾。平直的地方声音很轻，起伏明显的地方可以点过去听。 |
+| ▶️ 盯住正在听的那句话 | 点波形定位，按空格播放，再按一次暂停。把时间轴放大后，播放指针走出窗口，视图会跟过去；往回跳也一样。 |
+| 📝 展开逐字稿 | 点「显示转写」查看已有文字。「同步正文笔记与音频」和「显示转写」都可以点开关或旁边的文字。 |
+
+![整条会议波形在播放前已经可见，放大一段后，播放指针越过窗口右边，视图跟到下一句](https://gcore.jsdelivr.net/gh/jiangeeeeee/siyuan-voice-notes-lite@933f00094bfd98d629a62d954350eb673010efbc/docs/demos/zoom.gif)
+
+## ✍️ 已有功能
+
+### 录下线上会议
 
 | 想做什么 | 从哪里开始 |
 | --- | --- |
@@ -16,7 +28,7 @@
 
 ![从声波菜单选择会议录音和声音来源，结束后在正文里找到会议语音块](https://gcore.jsdelivr.net/gh/jiangeeeeee/siyuan-voice-notes-lite@v0.9.0/docs/demos/meeting-lite.gif)
 
-## ✍️ 已有功能
+### 在笔记里整理录音
 
 | 想做什么 | 从哪里开始 |
 | --- | --- |
@@ -44,10 +56,6 @@
 ![展开更多操作的四个分类，进入逐字稿与校对，打开导出选项](https://gcore.jsdelivr.net/gh/jiangeeeeee/siyuan-voice-notes-lite@v0.8.5/docs/demos/menu-lite.gif)
 
 ### 复听、标记与裁剪
-
-播放指针停在实验说明附近，向右拖缩放滑块，40 秒的音轨逐步展开为几秒的细节。
-
-![播放指针停在实验说明附近，向右拖缩放滑块，40 秒的音轨逐步展开为几秒的细节](https://gcore.jsdelivr.net/gh/jiangeeeeee/siyuan-voice-notes-lite@v0.8.5/docs/demos/zoom.gif)
 
 在播放位置写下开始计时和实验备注，保存后从时间轴和列表找到标记。
 
@@ -101,7 +109,7 @@
 
 | 版本 | 主要更新 |
 | --- | --- |
-| [0.9.0](https://github.com/jiangeeeeee/siyuan-voice-notes-lite/releases/tag/v0.9.0) | 新增会议录音，可单录系统声音，也可把麦克风一起录进去。 |
+| [0.9.0](https://github.com/jiangeeeeee/siyuan-voice-notes-lite/releases/tag/v0.9.0) | 新增会议录音，可单录系统声音，也可把麦克风一起录进去。 同版本修订：支持整轨波形预读、播放跟随和空格控制。 |
 | [0.8.6](https://github.com/jiangeeeeee/siyuan-voice-notes-lite/releases/tag/v0.8.6) | 修正 GitHub 和思源集市里的动图链接。 |
 | [0.8.5](https://github.com/jiangeeeeee/siyuan-voice-notes-lite/releases/tag/v0.8.5) | 文档录音入口和语音块有了同一枚声波图标。「更多操作」按用途收成四组，点开一组就能找到相关按钮。 |
 | [0.8.4](https://github.com/jiangeeeeee/siyuan-voice-notes-lite/releases/tag/v0.8.4) | 可以试听并保留或删除多个时间段，已有引用会跟随裁剪重新定位。时间轴改为围绕播放位置按比例缩放。 |

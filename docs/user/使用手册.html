@@ -1,4 +1,6 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>思源语音 0.8.2 使用手册</title><style>html{color-scheme:light dark}body{max-width:900px;margin:0 auto;padding:32px 24px 80px;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif;color:light-dark(#263a40,#d5e2e5);background:light-dark(#fbfdfc,#162126)}h1{font-size:30px}h2{font-size:23px;margin-top:2em;border-bottom:1px solid #78949950;padding-bottom:8px}a{color:light-dark(#176c65,#8bd4c6)}img{display:block;width:100%;height:auto;border:1px solid #78949940;border-radius:12px}table{border-collapse:collapse;width:100%}td,th{padding:10px;border:1px solid #78949950}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}pre{overflow:auto;padding:16px;background:#78949915}li{margin:8px 0}nav{padding:16px;border-radius:12px;background:#78949915}footer{margin-top:48px;font-size:13px;opacity:.8}@media(max-width:600px){body{padding:20px 16px}h1{font-size:25px}}</style><body><section style="padding:18px;background:#eef5ef;border:1px solid #b6cdbb;margin:16px 0"><h2>0.8.3 版本与安装说明</h2><p>Lite 与 Full 现在使用独立插件目录，请只启用一个版本。Full 集市包包含主转写与发言人模型，双模型复核另需 Windows x64 完整扩展。Lite 不显示自动识别入口。</p><p>切换版本后，在旧语音块的块菜单选择“用 Lite / Full 打开此语音块”。Full 启用时会添加模型同步排除规则，请先在“版本与模型”中确认，再进行云同步。录音、逐字稿和批注继续同步。</p><p>安装、分卷合并及版本切换的最新步骤，请查看安装包根目录的 INSTALL.md。下面的操作截图来自 0.8.2，部分菜单会因版本而不同。</p></section><section><h2>0.8.2 发言人修订（2026-11-13）</h2><p>右键音轨上方的发言人色条，可以变更或删除此段标注；第三项用于整个人物的改名、合并或删除。原音频与正文保留。</p><p>更多操作 → 自动区分发言人：填写实际讲话人数（0 为自动估计）后开始分析；高级阈值默认 0.5，分得过多可调大，误合并可调小。保留人工修正，跨人或交叠语段需要回听确认。</p><p>模型与相同音频/参数结果最多复用两分钟；首次推理仍使用原本的 CPU 模型，不保证逐段识别正确。完整原理与实测见同目录“发言人识别与修正.md”。</p></section><h1 id="_1">思源语音使用手册</h1>
+<h2>整段转写与发言人</h2><p>在 Full 的语音块里，点播放器下方的「整段录音转文字」。已有定时语段时会先询问是否重新转写，旧稿可以撤销恢复。「显示转写」只负责展开或收起文字。打开「自动识别发言人」，识别完成后音轨会出现人物色带，识别中再次关闭开关可取消。录音控制里的「结束后自动区分发言人」决定录完要不要自动分析。</p>
+
 <p>适用版本：0.8.2。以下操作以思源 3.8.9、Windows 和桌面编辑器为例。Lite 和 Full 使用同一个语音块格式；本轮录音演示由测试音频输入 MediaRecorder，不能代替真实麦克风权限验收。</p>
 <h2 id="_2">选择版本并安装</h2>
 <p>已经有字幕、主要想录音和手动整理，选 Lite。需要本机自动转写和匿名发言人分析，选 Full。本轮 Full 的第二模型组件适用于 Windows x64。Qwen 短样本实际峰值进程内存约 6 GB，内存紧张时先用主模型。</p>
@@ -47,7 +49,7 @@
 <h2 id="_10">音频无法播放或提示无法解码</h2>
 <p>先在右上角“更多操作”选择“重新读取音频”。这个操作重新请求资源并恢复播放位置；普通改名、标记或批注保存不会重新加载音频。仍然失败时，选择“下载原音频”检查文件是否已同步完整、能否在其他播放器打开。</p>
 <p>“无法解码”不表示插件删除了录音。网页错误响应、缺失资源、不完整传输和不受支持的编码会给出不同提示。不要删除现有语音块；它仍保存转写、人物、批注和引用。0.8.1 修复了长音频重绘后输出被关闭造成的无声；升级后重新打开语音块，使旧的输出链路释放。</p>
-<p>超过十分钟或较大的音频，波形使用播放副本采样；不支持媒体捕获的浏览器仅显示时间尺，播放不依赖波形采样。</p>
+<p>打开语音块，插件会按时间顺序读取各声道，画出整条波形。长录音可能需要稍等。点波形定位后，按空格播放或暂停。放大后，播放指针越过当前窗口，时间轴会跟到新位置。</p>
 <h2 id="_11">修改已保存录音的发言人</h2>
 <p>适用：Lite/Full，Free/Pro。</p>
 <p>只改一句话：点击该段“批注与编辑”，选择“发言人”，保存语段。它会成为人工更正，自动分析不应把它覆盖。</p>
@@ -101,7 +103,7 @@
 <li>引用旁的回听入口可播放原音。“跳转到录音”返回来源，语段右侧的链接数量入口列出反向引用的正文。</li>
 </ol>
 <p><img alt="选中文本后链接至语音" src="assets/manual-link.gif" /></p>
-<p>想引用两点之间的音频，可按住 Ctrl（macOS 为 Command）点击波形两处，或点击两个语段的时间按钮，再点“复制所选音频链接”。引用保存固定毫秒范围，后续改字、拆分、合并或更换人物名称都不应让原音漂移。</p>
+<p>按住 Ctrl（Mac 用 Command）在波形上点两处或拖出一段。选好后，可以点“复制所选音频链接”，Full 还可以点“转写所选片段”。如果选区只截取了已有语段的一部分，可点“保留原句，添加选段转写”。也可以在逐字稿中用两个语段的时间按钮选择引用范围。引用保存固定毫秒范围，后续改字、拆分、合并或更换人物名称都不应让原音漂移。</p>
 <h2 id="_18">复制带声音关联的正文</h2>
 <p>使用思源内的富文本复制与粘贴，已有正文关联会随内容保留；可以跨文档复制整段或所选部分。纯文本粘贴会去掉富文本关系，经过外部纯文本程序中转也可能丢失。</p>
 <p>Free 可以原样迁移已有关系，但不能利用旧剪贴板给任意新文字创建新的插件精确关联。原生普通块引用仍由思源处理。移动正文块保持块 ID，回听不依赖它在文档中的行号。</p>
